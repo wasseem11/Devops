@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Hello</title>
+</head>
+<body>
+
+<form action="/user" method="post">
+Enter your name: <input type="text" name="user">
+<input type="submit" value="Submit">
+
+</form>
+<br> 
+<span>Hi:</span><span th:text="${user}"></span>
+</body>
+</html>
